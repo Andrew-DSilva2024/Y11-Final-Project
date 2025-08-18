@@ -1,0 +1,25 @@
+.header {
+    background: linear-gradient(to right, rgb(86, 86, 204), lightblue);
+    height: 150px;
+    padding: 1px;
+    border: none;
+}
+.header h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 80px;
+    object-position: center;
+}
+
+p {
+    font-size: 50px;
+}
+
+.wilbur-button {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    transform: (0.3s);
+    cursor: pointer;
+}
