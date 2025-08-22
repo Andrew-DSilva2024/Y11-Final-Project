@@ -8,4 +8,8 @@ def server_statc(filepath):
 def home():
     return template('homepage')
 
+@route('/past')
+def past():
+    return template('past')
+
 run(host='localhost', reloader=True)
