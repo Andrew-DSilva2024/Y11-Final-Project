@@ -5,23 +5,35 @@ body {
 
 .header {
     background: linear-gradient(to right, rgb(167, 29, 29), rgb(180, 87, 12), rgb(85, 2, 2));
-    height: 150px;
+    height: 1000px;
     padding: 1px;
     border: none;
     display: flex;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
+
 }
 .header h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 80px;
-    
+    font-size: 40px;
 }
 
+.header:active {
+    background: linear-gradient(to right, rgb(167, 29, 29), rgb(180, 87, 12), rgb(85, 2, 2));
+    height: 50px;
+    padding: 1px;
+    border: none;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
 p {
     font-size: 50px;
 }
@@ -34,6 +46,7 @@ p {
     transform: (0.3s);
     cursor: pointer;
     align-items: center;
+    margin-top: 60px;
     box-shadow: 5px 5px 15px black;
 }
 
@@ -42,7 +55,7 @@ p {
 }
 
 .homebutton {
-    height: 50px;
+    height: 40px;
     width: 100px;
     padding: 10px;
     border-radius: 4px;
@@ -51,8 +64,12 @@ p {
     margin-right: 50px; 
 }
 
-.past {
-    height: 50px;
+.page-butonns {
+    align-items: right;
+}
+
+.aboutme {
+    height: 40px;
     width: 100px;
     padding: 10px;
     border-radius: 4px;
@@ -60,10 +77,11 @@ p {
     cursor: pointer;
     margin-left: 50px;
     background-color: lightgreen;
+    
 }
 
-.present {
-    height: 50px;
+.catholic {
+    height: 40px;
     width: 100px;
     padding: 10px;
     border-radius: 4px;
@@ -74,7 +92,7 @@ p {
 }
 
 .future {
-    height: 50px;
+    height: 40px;
     width: 100px;
     padding: 10px;
     border-radius: 4px;
@@ -82,4 +100,8 @@ p {
     cursor: pointer;
     margin-left: 50px;
     background-color: red;
+}
+
+a:link {
+    color: black;
 }

@@ -8,8 +8,8 @@ def server_statc(filepath):
 def home():
     return template('homepage')
 
-@route('/past')
-def past():
-    return template('past')
+@route('/aboutme')
+def aboutme():
+    return template('aboutme')
 
 run(host='localhost', reloader=True)
