@@ -4,12 +4,12 @@ body {
 }
 .header {
     position: fixed;
-    z-index: 3;
-    background: white;
+    z-index: 10;
+    background: radial-gradient(circle at center, white, lightblue);
     height: 100px;
     top: 0;
     width: 100vw;
-    
+    padding-top:5px;
 }
 
 .header h1 {
@@ -51,7 +51,7 @@ iframe {
     margin: -10;
     position: absolute;
     z-index: 1;
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
     pointer-events: none;
 }
@@ -62,4 +62,29 @@ iframe {
     height: 100vh;
     width: 60vw;
     background: linear-gradient(to right, rgb(255,255,255, 1), rgb(255,255,255, 1),rgb(255,255,255,0.6), rgb(255,255,255,0));
+}
+
+.id-photos {
+    display:flex;
+    position: absolute;
+    z-index:3;
+    height:100px;
+    width: auto;
+    margin-top: 200px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+.id-buttons {
+    margin-top: 470px;
+    display:flex;
+    position: absolute;
+    z-index: 3;
+    visibility: visible;
+    width: 50px;
+    height: auto;
+}
+
+.active {
+    visibility: visible;
 }
