@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type='text/css' href="sacredheartcopy.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: linear-gradient(to right, rgb(7, 54, 108), rgb(112, 182, 227));
+    width: 100vw;
+    height: 7vw;
+    position: fixed;
+    z-index: 3;
+    display: flex;     
+    text-align: center;
+}
+
+.homebutton {
+    width: auto;
+    height: 100px;
+    justify-content: left;
+    margin-right:5px;
+    left: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    text-align: center;
+}
+
+.button1 {
+    display: flex;
+    width:200px;
+    height: 18px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(30, 26, 116);
+    border-width: 1px;
+    border-color: rgb(154, 207, 237);
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 120%;
+  background: linear-gradient(to right, rgb(255,255,255) 100%, rgb(255,255,255,0) 0%);
+
+}
+
+body {
+    background-color: aqua;
+}
+
+iframe {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 57vw;
+}
+
+.other-buttons {
+    background: rgb(7, 54, 108);
+    display: flex;
+    font-size:14px;
+    width: 300px;
+    height: 20px;
+    margin-top: 0;
+    text-align: right;
+}
+
+.info {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:fixed;
+    width: 720px;
+    z-index: 4;
+    top: 400px;
+    left: 150px;
+}
+
+.marist {
+    font-size: 50px;
+    color: rgb(7, 54, 108);
+}
+
+.yap {
+    color: rgb(112, 182, 227);
+    font-size: 35px;
+}
+    </style>
+</head>
+<body>
+<div class="header">
+    <img class="homebutton" src="/static/shclogo.png">
+        <div class="nav-buttons">
+            <h2 class="button1">Explore Our College</h2>
+            <h2 class="button1">Quick links</h2>
+            <h2 class="button1">Search</h2>
+        </div>
+    <div class="other-buttons">
+        <p>Uniform shop</p>
+        <p>Tickets</p>
+        <p>Parent Portal</p>
+    </div>
+</div>
+    <div class="background-video">
+         <iframe
+        src="https://www.youtube-nocookie.com/embed/Ol_Cd-m8e3Q?autoplay=1&mute=1&loop=1&playlist=Ol_Cd-m8e3Q&controls=0&showinfo=0"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+        </iframe>
+        <div class="overlay"></div>
+        
+    </div>
+    <div class="info">
+            <h1 class="marist">The Making of Marist Men</h1>
+            <p class="yap">Making young men of authenticity - authentic in faith, character and aspiration</p>
+    </div>
+</body>
+</html>

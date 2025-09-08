@@ -24,21 +24,6 @@ p {
     font-size: 50px;
 }
 
-.wilbur-button {
-    height: 50px;
-    width: 500px;
-    padding: 10px;
-    border-radius: 4px;
-    transform: (0.3s);
-    cursor: pointer;
-    align-items: center;
-    margin-top: 60px;
-    box-shadow: 5px 5px 15px black;
-}
-
-.wilbur-button:active {
-    box-shadow: 0px 0px 0px black;
-}
 
 .homebutton {
     height: 40px;
@@ -48,10 +33,6 @@ p {
     transform: (0.3s);
     cursor: pointer;
     margin-right: 50px; 
-}
-
-.page-buttons {
-    align-items: right;
 }
 
 .aboutme {
@@ -92,7 +73,7 @@ a:link {
     color: black;
 }
 
-img {
-    height: 500px;
-    width: 250px;
+.id-photos {
+    top:60px;
+    left:20px;
 }

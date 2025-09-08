@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: linear-gradient(to right, rgb(41, 167, 29), rgb(180, 87, 12), rgb(207, 13, 13));
+    height: 100px;
+    top: 0;
+    width: 100vw;
+}
+
+.header h1 {
+    margin: auto;
+    text-align: center;
+    font-size:50px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:10px;
+}
+
+.buttons a {
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}

@@ -6,10 +6,13 @@ def server_statc(filepath):
 
 @route('/')
 def home():
-    return template('homepage')
+    return template('homepage2')
+
+@route('/sacred')
+def sacred():
+    return template('sacredheartcopy')
 
 @route('/aboutme')
 def aboutme():
     return template('aboutme')
-
 run(host='localhost', reloader=True)
