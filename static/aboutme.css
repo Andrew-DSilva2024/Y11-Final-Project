@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: fixed;
+    z-index: 3;
+    background: white;
+    height: 100px;
+    top: 0;
+    width: 100vw;
+    
+}
+
+.header h1 {
+    margin: auto;
+    text-align: center;
+    font-size:50px;
+    text-decoration: underline;
+}
+
+.bar {
+    position: fixed;
+    z-index:3;
+    top: 101;
+    width: 10px;
+    background-color: black;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:10px;
+}
+
+.buttons a {
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+
+iframe {
+    margin: -10;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 60vw;
+    background: linear-gradient(to right, rgb(255,255,255, 1), rgb(255,255,255, 1),rgb(255,255,255,0.6), rgb(255,255,255,0));
+}
