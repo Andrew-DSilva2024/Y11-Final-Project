@@ -11,7 +11,7 @@ body {
 .header {
     position: fixed;
     z-index: 2;
-    background: radial-gradient(circle at center, white, lightblue);
+    background: radial-gradient(circle at center, white, rgb(39, 103, 171));
     height: 100px;
     top: 0;
     width: 100vw;

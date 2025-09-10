@@ -15,4 +15,12 @@ def sacred():
 @route('/aboutme')
 def aboutme():
     return template('aboutme')
+
+@route('/present')
+def present():
+    return template('present')
+
+@route('/page2')
+def page2():
+    return template('page2')
 run(host='localhost', reloader=True)
