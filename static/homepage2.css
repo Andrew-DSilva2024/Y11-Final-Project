@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://insightplus.mja.com.au/wp-content/uploads/2021/09/climate-change-2021.jpg');
+    background-image: url('https://cdn.mos.cms.futurecdn.net/FB9UEycVmBN7Ye5XKMoB2b.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
@@ -11,7 +11,7 @@ body {
 .header {
     position: fixed;
     z-index: 2;
-    background: radial-gradient(circle at center, white, rgb(39, 103, 171));
+    background: radial-gradient(circle at center, white, rgb(59, 66, 74));
     height: 100px;
     top: 0;
     width: 100vw;
@@ -74,7 +74,7 @@ body {
     top: 450px;
     position: absolute;
     background: linear-gradient(to right, rgb(255,255,255, 0.6), rgb(255,255,255,0.6));
-    width: 55vw;
+    width: 60vw;
     padding-left: 20px;
 }
 

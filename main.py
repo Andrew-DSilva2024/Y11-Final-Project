@@ -16,9 +16,9 @@ def sacred():
 def aboutme():
     return template('aboutme')
 
-@route('/present')
-def present():
-    return template('present')
+@route('/past')
+def past():
+    return template('past')
 
 @route('/page2')
 def page2():

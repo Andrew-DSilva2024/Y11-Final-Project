@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: fixed;
+    z-index: 10;
+    background: radial-gradient(circle at center, white, lightblue);
+    height: 100px;
+    top: 0;
+    width: 100vw;
+    padding-top:5px;
+}
+
+.header h1 {
+    margin: auto;
+    text-align: center;
+    font-size:50px;
+    text-decoration: underline;
+}
+
+.bar {
+    position: fixed;
+    z-index:3;
+    top: 101;
+    width: 10px;
+    background-color: black;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:10px;
+}
+
+.buttons a {
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}

@@ -52,7 +52,7 @@ iframe {
     margin: -10;
     position: absolute;
     z-index: 1;
-    width: 110vw;
+    width: 100vw;
     height: 100vh;
     pointer-events: none;
 }
@@ -128,4 +128,14 @@ iframe {
     width: 200px;;
     width: auto;
     padding: 1em;
+}
+
+.myinfo {
+    position: absolute;
+    z-index: 3;
+    width: 350px;
+    margin-top: 700px;
+    margin-left:20px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
