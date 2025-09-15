@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -6,38 +8,25 @@ body {
     position: fixed;
     z-index: 10;
     background: radial-gradient(circle at center, white, lightblue);
-    height: 100px;
+    height: 55px;
     top: 0;
     width: 100vw;
-    padding-top:5px;
-}
-
-.header h1 {
-    margin: auto;
-    text-align: center;
-    font-size:50px;
-    text-decoration: underline;
-}
-
-.bar {
-    position: fixed;
-    z-index:3;
-    top: 101;
-    width: 10px;
-    background-color: black;
 }
 
 .buttons{
+    font-family: "Sour gummy";
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     padding:10px;
+    transform: 0.2s;
 }
 
 .buttons a {
     color: black;
-    margin-right: 10px;
+    margin-right: 50px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -45,12 +34,12 @@ body {
 .buttons a:hover {
     text-decoration: underline;
     text-decoration-color: blueviolet;
+    scale: 1.3;
 }
-
 iframe {
     max-width: 100vw;
     margin: -10;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100vw;
     height: 100vh;
@@ -60,7 +49,7 @@ iframe {
 .overlay {
     position: absolute;
     z-index: 2;
-    height: 100vh;
+    height: 350vh;
     width: 60vw;
     background: linear-gradient(to right, rgb(255,255,255, 1), rgb(255,255,255, 1),rgb(255,255,255,0.6), rgb(255,255,255,0));
 }
@@ -76,7 +65,7 @@ iframe {
 .carousel {
     position:absolute;
     z-index: 3;
-    width: 400px;
+    width: 384px;
     overflow-x:auto;
     margin: 3em auto;
     display: flex;
@@ -98,12 +87,12 @@ iframe {
     height: auto;
     content: 'Next Year';
     border: none;
-    color: orange;
+    color: blue;
     cursor: pointer;
     border-radius: 10%;
     align-items: center;
     margin-top: 650px;
-    margin-left: 200px;
+    margin-left: 220px;
 }
 
 .carousel::scroll-button(left) {
@@ -113,12 +102,19 @@ iframe {
     height: auto;
     content: 'Previous Year';
     border: none;
-    color: orange;
+    color: Blue;
     cursor: pointer;
     border-radius: 10%;
     align-items: center;
     margin-top: 650px;
-    margin-left: 10px;
+    margin-left: 30px;
+}
+
+.carousel.carousel::scroll-button(left):disabled {
+    color: red;
+}
+.carousel.carousel::scroll-button(right):disabled {
+    color: red;
 }
 
 
@@ -138,4 +134,13 @@ iframe {
     margin-left:20px;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+.myinfo img {
+    position:relative;
+    z-index: 3;
+    width: 350px;
+    height: auto;
+    margin-bottom: 15px;
 }

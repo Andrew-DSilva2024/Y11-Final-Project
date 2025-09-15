@@ -20,6 +20,10 @@ def aboutme():
 def past():
     return template('past')
 
+@route('/present')
+def present():
+    return template('present')
+
 @route('/page2')
 def page2():
     return template('page2')

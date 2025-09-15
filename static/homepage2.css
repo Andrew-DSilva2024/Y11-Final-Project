@@ -1,41 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://cdn.mos.cms.futurecdn.net/FB9UEycVmBN7Ye5XKMoB2b.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
 }
+
+video {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    object-fit: cover;
+}
+
 .header {
     position: fixed;
     z-index: 2;
     background: radial-gradient(circle at center, white, rgb(59, 66, 74));
-    height: 100px;
+    height: 55px;
     top: 0;
     width: 100vw;
 }
 
-.header h1 {
-    margin: auto;
-    text-align: center;
-    font-size:50px;
-    text-decoration: underline;
-    padding-top:5px;
-}
-
 .buttons{
+    font-family: "Sour gummy";
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     padding:10px;
+    transform: 0.2s;
 }
 
 .buttons a {
     color: black;
-    margin-right: 10px;
+    margin-right: 50px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -43,6 +44,7 @@ body {
 .buttons a:hover {
     text-decoration: underline;
     text-decoration-color: blueviolet;
+    scale: 1.3;
 }
 
 .background {
@@ -51,31 +53,36 @@ body {
     display: fixed;
 }
 
-.info {
+.titleinfo {
     z-index: 1;
-    top: 180px;
+    top: 100px;
     position: absolute;
-    background: linear-gradient(to right, rgb(255,255,255, 0.6), rgb(255,255,255,0.6));
+    font-size: 60px;
+    font-family: "Sour gummy";
+    background: linear-gradient(to right, rgb(255,255,255, 1), rgb(255,255,255,1));
     width: 100vw;
     text-align: center;
+    text-decoration: underline;
 }
 
-.paragraph-1 {
+.explain-text {
+    font-family: "Sour Gummy";
     z-index: 1;
-    top: 300px;
+    top: 200px;
     position: absolute;
-    background: linear-gradient(to right, rgb(255,255,255, 0.6), rgb(255,255,255,0.6));
-    width: 65vw;
-    padding-left: 20px;
+    margin-bottom: 50px;
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
 }
 
-.paragraph-2 {
+.para-text {
+    font-family: "Sour Gummy";
     z-index: 1;
-    top: 450px;
+    top: 600px;
     position: absolute;
-    background: linear-gradient(to right, rgb(255,255,255, 0.6), rgb(255,255,255,0.6));
-    width: 60vw;
-    padding-left: 20px;
+    margin-bottom: 50px;
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
 }
-
-
