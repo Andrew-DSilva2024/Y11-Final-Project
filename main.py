@@ -24,6 +24,10 @@ def past():
 def present():
     return template('present')
 
+@route('/future')
+def future():
+    return template('future')
+
 @route('/page2')
 def page2():
     return template('page2')
