@@ -3,7 +3,11 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    font-weight: normal;
 }
+
+/* ---------- Header ---------- */
 .header {
     position: fixed;
     z-index: 10;
@@ -13,15 +17,16 @@ body {
     width: 100vw;
 }
 
-.buttons{
-    font-family: "Sour gummy";
+/* ---------- Navigation Buttons ---------- */
+.buttons {
+    font-family: "Sour Gummy", sans-serif;
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    padding:10px;
-    transform: 0.2s;
+    padding: 10px;
+    transition: transform 0.2s;
 }
 
 .buttons a {
@@ -36,9 +41,11 @@ body {
     text-decoration-color: blueviolet;
     scale: 1.3;
 }
+
+/* ---------- Background Video/Iframe ---------- */
 iframe {
     max-width: 100vw;
-    margin: -10;
+    margin: 0;
     position: fixed;
     z-index: 1;
     width: 100vw;
@@ -46,100 +53,103 @@ iframe {
     pointer-events: none;
 }
 
+/* ---------- Overlay Section ---------- */
 .overlay {
-    position: absolute;
-    z-index: 2;
-    height: 350vh;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    position: relative;
     width: 60vw;
-    background: linear-gradient(to right, rgb(255,255,255, 1), rgb(255,255,255, 1),rgb(255,255,255,0.6), rgb(255,255,255,0));
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0)
+    );
+    height: max-content;
+    z-index: 3;
 }
 
+/* Inner container that holds all overlay content */
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 20px;
+}
+
+/* ---------- Title ---------- */
 .hi {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
-    position: absolute;
-    z-index: 3;
     margin-top: 120px;
-    margin-left: 20px;
 }
+
+/* ---------- Carousel ---------- */
 .carousel {
-    position:absolute;
     z-index: 3;
     width: 384px;
-    overflow-x:auto;
-    margin: 3em auto;
+    overflow-x: auto;
     display: flex;
     gap: 1em;
     scroll-behavior: smooth;
     border-radius: 5%;
-    margin-top: 200px;
-    margin-left: 20px;
 }
 
 .carousel::-webkit-scrollbar {
     display: none;
 }
 
-.carousel::scroll-button(right) {
-    position: absolute;
-    z-index: 3;
-    width: 100px;
-    height: auto;
-    content: 'Next Year';
-    border: none;
-    color: blue;
-    cursor: pointer;
-    border-radius: 10%;
-    align-items: center;
-    margin-top: 650px;
-    margin-left: 220px;
-}
+.carousel::scroll-button(right) { 
+    z-index: 3; 
+    width: 100px; 
+    height: auto; 
+    content: 'Next Year'; 
+    border: none; 
+    color: blue; 
+    cursor: pointer; 
+    border-radius: 10%; 
+    align-items: center; 
+    margin-left: 100px; 
+} 
 
-.carousel::scroll-button(left) {
-    position: absolute;
-    z-index: 3;
-    width:100px;
-    height: auto;
-    content: 'Previous Year';
-    border: none;
-    color: Blue;
-    cursor: pointer;
-    border-radius: 10%;
-    align-items: center;
-    margin-top: 650px;
-    margin-left: 30px;
-}
+.carousel::scroll-button(left) { 
+    z-index: 3; 
+    width:100px; 
+    height: auto; 
+    content: 'Previous Year'; 
+    border: none; 
+    color: Blue; 
+    cursor: pointer; 
+    border-radius: 10%; 
+    align-items: center; 
+    margin-left: 30px; 
+} 
+.carousel.carousel::scroll-button(left):disabled { 
+    color: red; 
+} 
 
-.carousel.carousel::scroll-button(left):disabled {
-    color: red;
+.carousel.carousel::scroll-button(right):disabled { 
+    color: red; 
 }
-.carousel.carousel::scroll-button(right):disabled {
-    color: red;
-}
-
 
 .card {
-    flex: 0  0 20em;
-    height: auto;
-    width: 200px;;
-    width: auto;
+    flex: 0 0 20em;
+    width: 200px;
     padding: 1em;
 }
 
+/* ---------- Info Section ---------- */
 .myinfo {
-    position: absolute;
     z-index: 3;
-    width: 350px;
-    margin-top: 700px;
-    margin-left:20px;
+    width: 400px;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 15px;
 }
 
 .myinfo img {
-    position:relative;
-    z-index: 3;
     width: 350px;
     height: auto;
     margin-bottom: 15px;

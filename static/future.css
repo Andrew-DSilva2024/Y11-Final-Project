@@ -4,19 +4,18 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-weight: normal;
 }
 .background-img {
     position: fixed;
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    max-width:100vw;
-    box-sizing: border-box;
 }
 .header {
     position: fixed;
     z-index: 3;
-    background: radial-gradient(circle at center, white, red);
+    background: radial-gradient(circle at center, white, rgb(238, 144, 144));
     height: 55px;
     top: 0;
     width: 100vw;
@@ -53,12 +52,11 @@ body {
     font-size: 60px;
     font-family: "Sour gummy";
     width: 100vw;
-    max-width: 100vw;
     padding:10px;
-    top: 55px;
+    top: 15px;
     background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
-    box-sizing: border-box;
 }
+
 .future-info {
     text-align: center;
     position: absolute;
@@ -66,13 +64,59 @@ body {
     font-size: 30px;
     font-family: "Sour gummy";
     width: 100vw;
-    max-width: 100vw;
     top: 800px;
-    background: linear-gradient(to right, rgb(255,255,255, 0.6), rgb(255,255,255,0.9));
+    background: linear-gradient(to right, rgb(255,255,255, 0.7), rgb(255,255,255,0.7));
     padding: 50px;
     box-sizing: border-box;
+    height:max-content;
+    display: block;
+
 }
+
+
+.para1,
+.para2,
+.para3,
+.para4 {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.para-img1,
+.para-img2,
+.para-img3,
+.para-img4 {
+    display: inline-block;
+    margin-right:100px;
+    margin-top: 50px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    height:500px;
+    width: auto;
+    align-items: left;
+}
+
+.para-text1,
+.para-text2,
+.para-text3,
+.para-text4 {
+    display: inline-block;
+    height: 600px;
+    width:500px;
+    margin-bottom: 100px;
+}
+
 
 .future-info h3{
     margin-bottom: 70px;
 }
+
+
+

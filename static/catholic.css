@@ -3,18 +3,19 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-weight: normal;
+    overflow-x: hidden;
 }
 .background-img {
-    size: cover;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: 1;
 }
 .header {
     position: fixed;
     z-index: 3;
-    background: radial-gradient(circle at center, white, lightgreen);
+    background: radial-gradient(circle at center, white, rgb(52, 60, 171));
     height: 55px;
     top: 0;
     width: 100vw;
@@ -44,7 +45,26 @@ body {
     scale: 1.3;
 }
 
-.past-heading {
+.text {
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    font-family: "Sour gummy";
+    width: 100vw;
+    top: 800px;
+    background: linear-gradient(to right, rgb(255,255,255, 0.7), rgb(255,255,255,0.7));
+    padding: 50px;
+    box-sizing: border-box;
+    height:max-content;
+    display: block;
+}
+
+.text h2 {
+    font-size: 40px;
+}
+
+.catholic-heading {
     text-align: center;
     position: fixed;
     z-index: 3;
@@ -56,7 +76,12 @@ body {
     background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
 }
 
-.past-info {
+.ladato-si-img {
+    width: 800px;
+    height: auto;
+}
+
+.faith-info {
     text-align: center;
     position: absolute;
     z-index: 2;
@@ -89,7 +114,7 @@ body {
 .para-img3,
 .para-img4 {
     display: inline-block;
-    margin-right:100px;
+    margin-left:100px;
     margin-top: 50px;
 }
 
@@ -113,9 +138,6 @@ body {
 }
 
 
-.past-info h3{
+.faith-info h3{
     margin-bottom: 70px;
 }
-
-
-

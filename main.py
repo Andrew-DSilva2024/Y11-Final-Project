@@ -28,6 +28,10 @@ def present():
 def future():
     return template('future')
 
+@route('/catholic')
+def catholic():
+    return template('catholic')
+
 @route('/page2')
 def page2():
     return template('page2')
