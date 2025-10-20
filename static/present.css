@@ -168,7 +168,7 @@ body {
     font-family: "Sour gummy";
     width: 100vw;
     top: 800px;
-    background: linear-gradient(to right, rgb(255,255,255, 0.7), rgb(255,255,255,0.7));
+    background: linear-gradient(to right, rgb(255,255,255, 1), rgb(255,255,255,0.7));
     padding: 50px;
     box-sizing: border-box;
     height:max-content;

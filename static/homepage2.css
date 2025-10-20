@@ -66,12 +66,8 @@ video {
     text-decoration: underline;
 }
 
-.all-info {
+.first-info {
     display: block;
-    box-sizing: border-box;
-}
-.explain-text {
-    display: inline-block;
     font-family: "Sour Gummy";
     z-index: 1;
     top: 200px;
@@ -79,12 +75,13 @@ video {
     margin-bottom: 50px;
     width: 40vw;
     text-align: center;
+    left:50px;
     background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
-    box-sizing: border-box;
+    padding: 20px;
 }
 
-.para-text {
-    display: inline-block;
+.second-info {
+    display: block;
     font-family: "Sour Gummy";
     z-index: 1;
     top: 200px;
@@ -92,6 +89,26 @@ video {
     margin-bottom: 50px;
     width: 40vw;
     text-align: center;
+    right: 50px;
     background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
-    box-sizing: border-box;
+    padding: 20px;
+}
+
+.third-info {
+    display: block;
+    font-family: "Sour Gummy";
+    z-index: 1;
+    top: 650px;
+    position: absolute;
+    margin-bottom: 50px;
+    width: 22vw;
+    text-align: center;
+    left: 50px;
+    background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
+    padding: 20px;
+}
+
+.third-info img {
+    width: 22vw;
+    height: auto;
 }
