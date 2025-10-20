@@ -35,4 +35,5 @@ def catholic():
 @route('/page2')
 def page2():
     return template('page2')
+
 run(host='localhost', reloader=True)

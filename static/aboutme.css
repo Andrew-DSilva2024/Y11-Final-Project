@@ -7,7 +7,6 @@ body {
     font-weight: normal;
 }
 
-/* ---------- Header ---------- */
 .header {
     position: fixed;
     z-index: 10;
@@ -17,7 +16,6 @@ body {
     width: 100vw;
 }
 
-/* ---------- Navigation Buttons ---------- */
 .buttons {
     font-family: "Sour Gummy", sans-serif;
     font-size: 30px;
@@ -42,7 +40,7 @@ body {
     scale: 1.3;
 }
 
-/* ---------- Background Video/Iframe ---------- */
+/* this is for the Sacred Heart Video that runs in the background of the page*/
 .background-video video {
   position: fixed;
   top: 0;
@@ -53,7 +51,7 @@ body {
   z-index: -1;
 }
 
-/* ---------- Overlay Section ---------- */
+/* this is an overlay which allows for the text */
 .overlay {
     margin: 0;
     padding: 0;
@@ -96,14 +94,14 @@ body {
     scroll-behavior: smooth;
     border-radius: 5%;
     padding: 0;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; /* this allows for the carousel to lock onto each photo when scrolling*/
 }
 
 .carousel::-webkit-scrollbar {
     display: none;
 }
 
-.carousel::scroll-button(right) { 
+.carousel::scroll-button(right) { /* this is a right scroll button for the carousel */
     z-index: 3; 
     width: 100px; 
     height: auto; 
@@ -116,11 +114,11 @@ body {
     margin-left: 100px;
 } 
 
-.carousel::scroll-button(left) { 
+.carousel::scroll-button(left) { /* this is a left scroll button for the carousel */
     z-index: 3; 
     width:100px; 
     height: auto; 
-    content: 'Previous Year'; 
+    content: 'Previous Year'; /* words on the button */
     border: none; 
     color: Blue; 
     cursor: pointer; 
@@ -128,18 +126,18 @@ body {
     align-items: center; 
     margin-left: 30px; 
 } 
-.carousel.carousel::scroll-button(left):disabled { 
+.carousel.carousel::scroll-button(left):disabled { /* this makes the left scroll button red when you cannot go back any more years */
     color: red; 
 } 
 
-.carousel.carousel::scroll-button(right):disabled { 
+.carousel.carousel::scroll-button(right):disabled { /* this makes the right scroll button red when you cannot go forward any more years */
     color: red; 
 }
 
 .card {
     flex: 0 0 100%;
     padding: 0;
-    scroll-snap-align: start;
+    scroll-snap-align: start; /* this ensures that the carousel scrolling snaps to the start of the photo */
 }
 
 /* ---------- Info Section ---------- */
