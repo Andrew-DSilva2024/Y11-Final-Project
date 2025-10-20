@@ -76,3 +76,147 @@ body {
 .present-info h3{
     margin-bottom: 70px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+.background-img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+.header {
+    position: fixed;
+    z-index: 3;
+    background: radial-gradient(circle at center, white, rgb(221, 131, 29));
+    height: 55px;
+    top: 0;
+    width: 100vw;
+}
+
+.buttons{
+    font-family: "Sour gummy";
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:10px;
+    transform: 0.2s;
+}
+
+.buttons a {
+    color: black;
+    margin-right: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    scale: 1.3;
+}
+
+.text {
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    font-family: "Sour gummy";
+    width: 100vw;
+    top: 800px;
+    background: linear-gradient(to right, rgb(255,255,255, 0.7), rgb(255,255,255,0.7));
+    padding: 50px;
+    box-sizing: border-box;
+    height:max-content;
+    display: block;
+}
+
+.text h2 {
+    font-size: 40px;
+}
+
+.present-heading {
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+    font-size: 60px;
+    font-family: "Sour gummy";
+    width: 100vw;
+    padding:10px;
+    top: 15px;
+    background: linear-gradient(to right, rgb(255,255,255, 0.9), rgb(255,255,255,0.9));
+}
+
+.ladato-si-img {
+    width: 800px;
+    height: auto;
+}
+
+.present-info {
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    font-family: "Sour gummy";
+    width: 100vw;
+    top: 800px;
+    background: linear-gradient(to right, rgb(255,255,255, 0.7), rgb(255,255,255,0.7));
+    padding: 50px;
+    box-sizing: border-box;
+    height:max-content;
+    display: block;
+
+}
+
+
+.para1,
+.para2,
+.para3,
+.para4 {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.para-img1,
+.para-img2,
+.para-img3,
+.para-img4 {
+    display: inline-block;
+    margin-left:100px;
+    margin-top: 50px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    height:500px;
+    width: auto;
+    align-items: left;
+}
+
+.para-text1,
+.para-text2,
+.para-text3,
+.para-text4 {
+    display: inline-block;
+    height: 600px;
+    width:500px;
+    margin-bottom: 100px;
+}
+
+
+.present-info h3{
+    margin-bottom: 70px;
+}

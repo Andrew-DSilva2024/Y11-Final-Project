@@ -7,7 +7,8 @@ body {
     font-weight: normal;
 }
 .background-img {
-    size: cover;
+    width:100vw;
+    height: 100vh;
     position: fixed;
     z-index: 1;
 }
@@ -117,5 +118,8 @@ body {
     margin-bottom: 70px;
 }
 
+.lasttext {
+    margin-top: 50px;
+}
 
 
