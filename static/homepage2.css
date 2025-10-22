@@ -57,7 +57,7 @@ video {
 .titleinfo {
     z-index: 1;
     top: 55px;
-    position: absolute;
+    position: fixed;
     font-size: 60px;
     font-family: "Sour gummy";
     background: linear-gradient(to right, rgb(255,255,255, 1), rgb(255,255,255,1));
@@ -111,4 +111,8 @@ video {
 .third-info img {
     width: 22vw;
     height: auto;
+}
+
+.sources {
+    font-size: 12px;
 }
