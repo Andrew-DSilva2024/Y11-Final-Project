@@ -224,3 +224,8 @@ body {
 .sources {
     font-size: 12px;
 }
+
+.lasttext-title {
+    font-size: 50px;
+    text-decoration: underline;
+}
